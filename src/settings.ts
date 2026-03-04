@@ -131,7 +131,7 @@ export default class AdmonitionSetting extends PluginSettingTab {
         new Setting(admonitionEl)
             .setName("Use CSS Snippet for Custom Callouts")
             .setDesc(
-                "Instead of managing it internally, Admonitions will maintain a CSS snippet to enable your custom types for callouts."
+                "Instead of managing it internally, Admonitions will maintain a CSS snippet to enable your custom types for callouts. This setting must be enabled for custom callouts in separate windows to render correctly."
             )
             .addToggle((t) =>
                 t.setValue(this.plugin.data.useSnippet).onChange((v) => {
