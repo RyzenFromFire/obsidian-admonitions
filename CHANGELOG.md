@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.3.4](https://github.com/RyzenFromFire/obsidian-admonitions/compare/10.3.3...10.3.4) (2026-03-04)
+
+
+### Bug Fixes
+
+* Add detail to settings about workaround for upstream [#344](https://github.com/RyzenFromFire/obsidian-admonitions/issues/344) ([687bcf2](https://github.com/RyzenFromFire/obsidian-admonitions/commit/687bcf22602bfa9d33e1d8b0538f193a11f212be))
+* icons and default titles failing to apply on first load ([a9d12c9](https://github.com/RyzenFromFire/obsidian-admonitions/commit/a9d12c93a49dbf1df1bef83b5413c0f700176f74))
+
 ## [10.3.3](https://github.com/RyzenFromFire/obsidian-admonitions/compare/v10.3.2...10.3.3) (2026-02-16)
 
 
