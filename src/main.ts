@@ -148,9 +148,13 @@ export default class ObsidianAdmonition extends Plugin {
 
         await this.loadSettings();
         await this.iconManager.load();
-        this.app.workspace.onLayoutReady(async () => {
-            this.addChild((this.calloutManager = new CalloutManager(this)));
 
+        // instantiate callout manager synchronously
+        // this prevents titles and icons from failing to apply on first load
+        this.addChild((this.calloutManager = new CalloutManager(this)));
+
+        this.app.workspace.onLayoutReady(async () => {
+          
             this.registerEditorSuggest(new AdmonitionSuggest(this));
 
             Object.keys(this.admonitions).forEach((type) => {
